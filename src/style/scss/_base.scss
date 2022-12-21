@@ -1,3 +1,19 @@
+// Colors
+$color--primary-violet: #2d2640;
+$color-primary-grayish-blue: #95a9c6;
+$color-violet-dark: #2b272f;
+$color-grayish-violet: #837d87;
+$color-gray-light: #fafafa;
+
+// Media
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+}
+
 *,
 ::before,
 ::after {
@@ -9,4 +25,15 @@
 html {
   box-sizing: border-box;
   font-size: 62.5%;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
 }

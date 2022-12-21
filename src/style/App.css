@@ -11,6 +11,17 @@ html {
   font-size: 62.5%;
 }
 
+body {
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
