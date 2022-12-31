@@ -92,10 +92,6 @@ button {
   font-family: "Karla", sans-serif;
 }
 
-.container {
-  overflow: hidden;
-}
-
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -114,7 +110,7 @@ button {
   cursor: pointer;
 }
 .header__nav--items {
-  position: absolute;
+  position: fixed;
   text-align: center;
   right: -100%;
   background-color: #2c2830;
