@@ -1,21 +1,24 @@
 import "./style/App.css";
 import Footer from "./components/Footer";
-import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 import Features from "./components/Features";
 import Cta from "./components/Cta";
 import Footer2 from "./components/Footer2";
+import Hero from "./components/Hero";
+
+import { useState } from "react";
 
 function App() {
+  const [menuClicked, setMenuClicked] = useState(false);
   return (
     <>
-      <main className="container">
-        <Navbar />
-        <Header />
+      <Header menuClicked={menuClicked} setMenuClicked={setMenuClicked} />
+      <main className="main">
+        <Hero />
         <Features />
         <Cta />
-        <Footer2 />
       </main>
+      <Footer2 />
       <Footer />
     </>
   );
