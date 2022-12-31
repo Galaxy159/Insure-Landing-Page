@@ -6,21 +6,23 @@ export default function Header({ menuClicked, setMenuClicked }) {
   return (
     <>
       <header className="header">
-        <div className="header__logo">
-          <img src={logo} alt="Insure" className="header__logo-img" />
-        </div>
-        <nav className="header__nav">
+        <div className="header__topbar">
+          <div className="header__topbar--logo">
+            <img src={logo} alt="Insure" className="header__topbar--logo-img" />
+          </div>
           <div
-            className="header__nav--menu"
+            className="header__topbar--menu"
             onClick={() => setMenuClicked((prev) => !prev)}
           >
             <img
               src={menuClicked ? close : hamburger}
               alt="Menu"
-              className="header__nav--menu-img"
+              className="header__topbar--menu-img"
             />
           </div>
-          <ul className="header__nav--items">
+        </div>
+        <nav className="header__nav">
+          <ul className={`header__nav--items ${menuClicked ? "menuOpen" : ""}`}>
             <li className="header__nav--items-item">
               <a href="#0">HOW WE WORK</a>
             </li>

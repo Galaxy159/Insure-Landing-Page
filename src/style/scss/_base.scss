@@ -47,6 +47,7 @@ html {
 
 body {
   font-family: "Karla", sans-serif;
+  position: relative;
 }
 
 h1,
@@ -117,4 +118,8 @@ a {
 
 button {
   cursor: pointer;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
 }

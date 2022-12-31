@@ -12,13 +12,15 @@ function App() {
   const [menuClicked, setMenuClicked] = useState(false);
   return (
     <>
-      <Header menuClicked={menuClicked} setMenuClicked={setMenuClicked} />
-      <main className="main">
-        <Hero />
-        <Features />
-        <Cta />
-      </main>
-      <Footer2 />
+      <div className="container">
+        <Header menuClicked={menuClicked} setMenuClicked={setMenuClicked} />
+        <main className="main">
+          <Hero />
+          <Features />
+          <Cta />
+        </main>
+        <Footer2 />
+      </div>
       <Footer />
     </>
   );
