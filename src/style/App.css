@@ -114,8 +114,8 @@ button {
   right: -100%;
   top: 8rem;
   background: url("../images/bg-pattern-mobile-nav.svg") no-repeat, #2c2830;
-  background-position: bottom 0 left 0;
-  background-size: 100%;
+  background-position: bottom 8rem left 0;
+  background-size: 100% auto;
   width: 100vw;
   height: 100vh;
   transition: all 0.3s ease-in-out;
