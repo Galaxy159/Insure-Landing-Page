@@ -1,0 +1,27 @@
+.features {
+  padding: 14rem 2.4rem;
+  &__separator {
+    height: 1px;
+    width: 15rem;
+    margin: 0 auto;
+    background-color: #c396c6;
+    margin-bottom: 4rem;
+  }
+  &__headline {
+    margin-bottom: $mar-500;
+    color: #2c2830;
+  }
+  &__item {
+    margin-bottom: $mar-400;
+    &--icon {
+      margin-bottom: $mar-300;
+    }
+    &--headline {
+      margin-bottom: $mar-100;
+      color: #2c2830;
+    }
+    &--text {
+      color: $color-grayish-violet;
+    }
+  }
+}

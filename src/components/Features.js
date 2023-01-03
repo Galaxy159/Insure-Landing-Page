@@ -6,6 +6,7 @@ export default function Features() {
   return (
     <>
       <section className="features">
+        <div className="features__separator"></div>
         <h2 className="features__headline">We’re different</h2>
         <div className="features__item">
           <div className="features__item--icon">

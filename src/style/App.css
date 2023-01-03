@@ -91,6 +91,10 @@ button {
   font-family: "Karla", sans-serif;
 }
 
+.container {
+  text-align: center;
+}
+
 .header {
   position: -webkit-sticky;
   position: sticky;
@@ -111,7 +115,6 @@ button {
 }
 .header__nav--items {
   position: fixed;
-  text-align: center;
   right: -100%;
   top: 8rem;
   background: url("../images/bg-pattern-mobile-nav.svg") no-repeat, #2c2830;
@@ -151,7 +154,6 @@ button {
 .hero {
   background-color: #2d2640;
   color: white;
-  text-align: center;
 }
 .hero__hero--img {
   width: 100vw;
@@ -186,6 +188,34 @@ button {
   position: absolute;
   left: 0;
   top: 53.3rem;
+}
+
+.features {
+  padding: 14rem 2.4rem;
+}
+.features__separator {
+  height: 1px;
+  width: 15rem;
+  margin: 0 auto;
+  background-color: #c396c6;
+  margin-bottom: 4rem;
+}
+.features__headline {
+  margin-bottom: 8rem;
+  color: #2c2830;
+}
+.features__item {
+  margin-bottom: 5.6rem;
+}
+.features__item--icon {
+  margin-bottom: 3.2rem;
+}
+.features__item--headline {
+  margin-bottom: 1.6rem;
+  color: #2c2830;
+}
+.features__item--text {
+  color: #837d87;
 }
 
 .attribution {
