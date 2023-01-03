@@ -12,7 +12,9 @@
     color: #2c2830;
   }
   &__item {
-    margin-bottom: $mar-400;
+    &:not(:last-child) {
+      margin-bottom: $mar-400;
+    }
     &--icon {
       margin-bottom: $mar-300;
     }

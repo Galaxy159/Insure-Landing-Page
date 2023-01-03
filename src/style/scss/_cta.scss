@@ -1,0 +1,19 @@
+.cta {
+  background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat,
+    $color--primary-violet;
+  background-position: top 0 right 0;
+  padding: 7.2rem 2.4rem;
+  margin-inline: $mar-200;
+  margin-bottom: 14rem;
+  &__headline {
+    color: white;
+    margin-bottom: 4rem;
+  }
+  &__btn {
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    width: 16rem;
+    height: 4rem;
+  }
+}
