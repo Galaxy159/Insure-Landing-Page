@@ -17,6 +17,7 @@
         height: 2.4rem;
         width: 2.4rem;
         fill: $color-grayish-violet;
+        cursor: pointer;
       }
     }
   }
@@ -46,7 +47,9 @@
           color: $color--primary-violet;
           margin-bottom: $mar-100;
 
-          & a:visited {
+          & a:visited,
+          a:link,
+          a:active {
             color: $color--primary-violet;
           }
         }

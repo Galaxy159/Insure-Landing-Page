@@ -257,6 +257,7 @@ button {
   height: 2.4rem;
   width: 2.4rem;
   fill: #837d87;
+  cursor: pointer;
 }
 .footer__separator {
   height: 1px;
@@ -283,7 +284,9 @@ button {
   color: #2d2640;
   margin-bottom: 1.6rem;
 }
-.footer__nav--row-list-item a:visited {
+.footer__nav--row-list-item a:visited,
+.footer__nav--row-list-item a:link,
+.footer__nav--row-list-item a:active {
   color: #2d2640;
 }
 
