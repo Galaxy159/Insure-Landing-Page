@@ -1,0 +1,44 @@
+.hero {
+  background-color: $color--primary-violet;
+  color: white;
+  text-align: center;
+
+  &__hero {
+    &--img {
+      width: 100vw;
+      height: 45.1rem;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    padding: 9.3rem 2.4rem;
+    position: relative;
+    z-index: 1;
+    &--headline {
+      margin-bottom: $mar-100;
+    }
+    &--text {
+      margin-bottom: $mar-300;
+    }
+    &--btn {
+      width: 14.6rem;
+      height: 4rem;
+      color: white;
+      background-color: transparent;
+      border: 1px solid white;
+    }
+  }
+  &__bg-patterns {
+    &--right {
+      position: absolute;
+      right: 0;
+      top: 88rem;
+    }
+    &--left {
+      position: absolute;
+      left: 0;
+      top: 53.3rem;
+    }
+  }
+}

@@ -9,24 +9,6 @@ export default function Hero() {
   return (
     <>
       <section className="hero">
-        <div className="hero__bg-patterns">
-          <picture>
-            <source srcSet={bgRightDesk} media="(min-width: 768px)" />
-            <img
-              src={bgRightMob}
-              alt="Background pattern"
-              className="hero__bg-patterns--right"
-            />
-          </picture>
-          <picture>
-            <source srcSet={bgLeftDesk} media="(min-width: 768px)" />
-            <img
-              src={bgLeftMob}
-              alt="Background pattern"
-              className="hero__bg-patterns--left"
-            />
-          </picture>
-        </div>
         <div className="hero__container">
           <div className="hero__hero">
             <picture>
@@ -49,6 +31,24 @@ export default function Hero() {
             </p>
             <button className="hero__content--btn">VIEW PLANS</button>
           </div>
+        </div>
+        <div className="hero__bg-patterns">
+          <picture>
+            <source srcSet={bgRightDesk} media="(min-width: 768px)" />
+            <img
+              src={bgRightMob}
+              alt="Background pattern"
+              className="hero__bg-patterns--right"
+            />
+          </picture>
+          <picture>
+            <source srcSet={bgLeftDesk} media="(min-width: 768px)" />
+            <img
+              src={bgLeftMob}
+              alt="Background pattern"
+              className="hero__bg-patterns--left"
+            />
+          </picture>
         </div>
       </section>
     </>

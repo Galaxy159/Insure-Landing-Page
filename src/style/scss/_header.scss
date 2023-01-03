@@ -1,6 +1,7 @@
 .header {
   position: sticky;
   top: 0;
+  z-index: 2;
   &__topbar {
     display: grid;
     grid-template-columns: repeat(2, max-content);
@@ -9,14 +10,8 @@
     padding: 2.4rem;
     background-color: white;
 
-    &--logo {
-      &-img {
-      }
-    }
     &--menu {
       cursor: pointer;
-      &-img {
-      }
     }
   }
   &__nav {
