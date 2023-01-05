@@ -122,4 +122,8 @@ button {
 
 .container {
   text-align: center;
+
+  @include respond(desktop) {
+    text-align: left;
+  }
 }
