@@ -453,6 +453,7 @@ button {
     background: url("../images/bg-pattern-footer-desktop.svg") no-repeat, #fafafa;
     background-position: top 0 left 0;
     padding: 6.4rem 16.5rem;
+    height: 39.3rem;
   }
 }
 @media (min-width: 1110px) {

@@ -9,6 +9,7 @@
       $color-gray-light;
     background-position: top 0 left 0;
     padding: 6.4rem 16.5rem;
+    height: 39.3rem;
   }
   &__topbar {
     @include respond(desktop) {
