@@ -1,19 +1,47 @@
 .features {
   padding: 14rem 2.4rem;
-  &__separator {
+
+  @include respond(desktop) {
+    padding: 0;
+    margin: 0 16.5rem 15.8rem;
+  }
+  &::before {
+    content: "";
+    display: block;
     height: 1px;
     width: 15rem;
     margin: 0 auto;
     background-color: #c396c6;
     margin-bottom: 4rem;
+
+    @include respond(desktop) {
+      margin: 0 0 6.4rem 0;
+    }
   }
+
+  &__container {
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: repeat(3, max-content);
+      gap: 3rem;
+    }
+  }
+
   &__headline {
     margin-bottom: $mar-500;
     color: #2c2830;
+
+    @include respond(desktop) {
+      margin-bottom: 9.6rem;
+    }
   }
   &__item {
     &:not(:last-child) {
       margin-bottom: $mar-400;
+    }
+
+    @include respond(desktop) {
+      max-width: 35rem;
     }
     &--icon {
       margin-bottom: $mar-300;

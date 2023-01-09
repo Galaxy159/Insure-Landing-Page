@@ -1,12 +1,34 @@
 .hero {
   background-color: $color--primary-violet;
   color: white;
+  @include respond(desktop) {
+    position: relative;
+    margin-bottom: 30.5rem;
+  }
+
+  &__container {
+    @include respond(desktop) {
+      display: grid;
+      grid-template-columns: repeat(2, max-content);
+      justify-content: center;
+      transform: translateY(10.5rem);
+      gap: 2rem;
+    }
+  }
 
   &__hero {
+    @include respond(desktop) {
+      grid-column: 2 / 3;
+    }
     &--img {
       width: 100vw;
       height: 45.1rem;
       object-fit: cover;
+
+      @include respond(desktop) {
+        width: 54rem;
+        height: auto;
+      }
     }
   }
 
@@ -14,11 +36,31 @@
     padding: 9.3rem 2.4rem;
     position: relative;
     z-index: 1;
+
+    @include respond(desktop) {
+      grid-row: 1 / 2;
+      padding: 0;
+      &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        width: 15rem;
+        background-color: #ffffff;
+        margin-bottom: 6.3rem;
+      }
+    }
     &--headline {
       margin-bottom: $mar-100;
+
+      @include respond(desktop) {
+        max-width: 50rem;
+      }
     }
     &--text {
       margin-bottom: $mar-300;
+      @include respond(desktop) {
+        max-width: 55rem;
+      }
     }
     &--btn {
       width: 14.6rem;
@@ -26,6 +68,12 @@
       color: white;
       background-color: transparent;
       border: 1px solid white;
+      transition: all 0.2s;
+
+      &:hover {
+        background-color: white;
+        color: #2c2830;
+      }
     }
   }
   &__bg-patterns {
@@ -33,11 +81,20 @@
       position: absolute;
       right: 0;
       top: 88rem;
+
+      @include respond(desktop) {
+        top: -8rem;
+        clip-path: polygon(0 8rem, 100% 8rem, 100% 100%, 0 100%);
+      }
     }
     &--left {
       position: absolute;
       left: 0;
       top: 53.3rem;
+
+      @include respond(desktop) {
+        top: 48.1rem;
+      }
     }
   }
 }
