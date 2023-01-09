@@ -4,6 +4,7 @@
   @include respond(desktop) {
     position: relative;
     margin-bottom: 30.5rem;
+    height: 60rem;
   }
 
   &__container {
@@ -54,6 +55,7 @@
 
       @include respond(desktop) {
         max-width: 50rem;
+        margin-bottom: $mar-300;
       }
     }
     &--text {
@@ -93,7 +95,7 @@
       top: 53.3rem;
 
       @include respond(desktop) {
-        top: 48.1rem;
+        top: 42.9rem;
       }
     }
   }

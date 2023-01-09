@@ -25,7 +25,7 @@ export default function Footer2() {
           </div>
         </div>
         <div className="footer__separator"></div>
-        <nav className="footer__nav">
+        <div className="footer__nav">
           <div className="footer__nav--row">
             <p className="footer__nav--headline">OUR COMPANY</p>
             <ul className="footer__nav--row-list">
@@ -88,7 +88,7 @@ export default function Footer2() {
               </li>
             </ul>
           </div>
-        </nav>
+        </div>
       </footer>
     </>
   );
