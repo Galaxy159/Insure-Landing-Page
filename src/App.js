@@ -1,5 +1,5 @@
 import "./style/App.css";
-import Footer from "./components/Footer";
+// import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Features from "./components/Features";
 import Cta from "./components/Cta";
@@ -21,7 +21,7 @@ function App() {
         </main>
         <Footer2 />
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }
