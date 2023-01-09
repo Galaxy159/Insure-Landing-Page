@@ -38,10 +38,15 @@
   &__item {
     &:not(:last-child) {
       margin-bottom: $mar-400;
+
+      @include respond(desktop) {
+        margin-bottom: 0;
+      }
     }
 
     @include respond(desktop) {
       max-width: 35rem;
+      margin-bottom: 0;
     }
     &--icon {
       margin-bottom: $mar-300;

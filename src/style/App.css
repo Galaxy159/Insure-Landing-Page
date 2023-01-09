@@ -379,8 +379,14 @@ button {
   margin-bottom: 5.6rem;
 }
 @media (min-width: 1110px) {
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 1110px) {
   .features__item {
     max-width: 35rem;
+    margin-bottom: 0;
   }
 }
 .features__item--icon {
